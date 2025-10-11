@@ -15,6 +15,7 @@ class Program
             Console.WriteLine("3. Load");
             Console.WriteLine("4. Save");
             Console.WriteLine("5. Quit");
+            Console.WriteLine();
 
             String Usernumber = Console.ReadLine();
             UserInput = int.Parse(Usernumber);
@@ -39,10 +40,10 @@ class Program
             }
             else if (UserInput == 3)
             {
-                Console.WriteLine("What is the filename");
+                Console.Write("What is the filename: ");
                 string filename = Console.ReadLine();
                 journal.ReadFromFile(filename);
-                Console.WriteLine("Succesfully saved bro!!!");
+                Console.WriteLine($"Journal succesfully loaded from {filename}");
 
             }
             else if (UserInput == 4)
