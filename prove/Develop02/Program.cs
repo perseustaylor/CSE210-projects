@@ -21,7 +21,9 @@ class Program
             UserInput = int.Parse(Usernumber);
 
             if (UserInput == 1)
-            {
+            {   
+                Console.WriteLine("How are you feeling today?");
+                string mood = Console.ReadLine();
                 String prompt = promptGenerator.GetRandomPrompt();
                 Console.WriteLine(prompt);
                 Console.Write(">>>");
@@ -31,6 +33,7 @@ class Program
                 entry._date = DateTime.Now.ToShortDateString();
                 entry._prompt = prompt;
                 entry._response = response;
+                entry._mood = mood;
                 journal.AddEntry(entry);
 
             }
