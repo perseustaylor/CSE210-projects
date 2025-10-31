@@ -23,7 +23,7 @@ class Program
 
             if (scripture.AllWordsHidden())
             {
-                Console.WriteLine("All words are hidden. Exiting program.");
+                Console.WriteLine("All words are hidden.");
                 break;
             }
         }
