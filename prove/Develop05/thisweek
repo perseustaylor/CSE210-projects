@@ -1,0 +1,4 @@
+400
+SimpleGoal:swimming|swim each weekend|100|True
+EternalGoal:church|go to church on sundays|200|False
+ChecklistGoal:buy groceries three times this week|buy groceries three times this week|100|False|1|500|5320

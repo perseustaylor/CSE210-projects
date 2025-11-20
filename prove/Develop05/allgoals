@@ -1,0 +1,4 @@
+1500
+SimpleGoal:   running|run two hours each day|100|False
+EternalGoal:  scriptures|Read scripture each day|200|False
+ChecklistGoal: groceries|buy groceries three times this month|200|True|3|3|600
