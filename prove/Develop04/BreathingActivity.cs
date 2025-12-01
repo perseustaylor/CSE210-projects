@@ -13,7 +13,6 @@ class BreathingActivity : Activity
         Console.WriteLine("Get ready to begin...");
         Spinner(3);
         PerformBreathing();
-        
     }
     public void PerformBreathing()
     {

@@ -8,6 +8,27 @@ class Activity
     private string _description;
     private int _duration;
 
+    private List<string> _quotes = new List<string>
+    {
+        "You are stronger than you think.",
+        "you can do hard things.",
+        "Every day is a new beginning.",
+        "be proud of your progress.",
+        "God loves you.",
+        "Believe in yourself.",
+        "Stay strong.",
+        "Keep moving forward.",
+
+    };
+
+    public void DisplayRandomQuote()
+    {
+        Random rand = new Random();
+        Console.WriteLine("\nQuote of the Day:");
+        Console.WriteLine($"{_quotes[rand.Next(_quotes.Count)]}");
+        Console.WriteLine();
+    }
+
     public Activity(string name, string description)
     {
         _name = name;
@@ -48,6 +69,7 @@ class Activity
         Console.WriteLine($"You have completed the {_name} activity in {_duration} seconds.");
         Console.WriteLine("Great job!");
         Spinner(3);
+        DisplayRandomQuote();
     }
 
     public void Spinner(int duration)
